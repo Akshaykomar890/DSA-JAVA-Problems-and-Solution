@@ -1,0 +1,22 @@
+//Codeforce 4A Watermeloon Problem
+
+import java.util.Scanner;
+
+public class Watermelon {
+    public static void main(String[] args) {
+        //Print YES, if the boys can divide the watermelon into two parts,
+        // each of them weighing even number of kilos; and NO in the opposite case.
+        Scanner sc = new Scanner(System.in);
+        int half = sc.nextInt();
+        String yes = "YES";
+        String no = "NO";
+
+        if(half == 2){
+            System.out.println(no);
+        } else if (half%2 ==0) {
+            System.out.println(yes);
+        } else{
+            System.out.println(no);
+        }
+    }
+}
